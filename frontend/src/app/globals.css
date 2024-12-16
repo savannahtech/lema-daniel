@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../styles/loading-animation.css';
+
+:root{
+    --animate-duration: 0.2s;
+}
+body {
+    @apply text-[#535862]
+}
+
+.smooth {
+    @apply transition-all duration-200
+}
+
+.find{
+    @apply border border-red-500
+}
+
+.dynamic-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: unset; /* Disable fixed clamping */
+}
+
+.border-long-dashed {
+    border-width: 1px;
+    border-spacing: 100px;
+    border-style: dashed;
+}
